@@ -1,2 +1,3 @@
 # project
- This is my First Git Repository
+First Repository
+Author - Tejashwini Singh
