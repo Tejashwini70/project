@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Finance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Personal Finance Dashboard</h1>
+
+    <!-- Balance Overview -->
+    <div class="balance">
+      <h2>Balance: <span id="balance">$0</span></h2>
+      <p>Income: <span id="income">$0</span></p>
+      <p>Expenses: <span id="expenses">$0</span></p>
+    </div>
+
+    <!-- Add Transaction -->
+    <div class="transaction-form">
+      <h3>Add Transaction</h3>
+      <input type="text" id="desc" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="history">
+      <h3>Transaction History</h3>
+      <ul id="list"></ul>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart">
+      <h3>Expense Breakdown</h3>
+      <canvas id="expenseChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
